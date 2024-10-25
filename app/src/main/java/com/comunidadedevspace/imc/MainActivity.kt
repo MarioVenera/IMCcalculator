@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
             val alturaStr: String = edtAltura.text.toString()
 
             if (pesoStr == "" || alturaStr == ""){
-                //mostrar mensagem para usuario
 
                 Snackbar.make(
                     edtPeso,
@@ -36,10 +35,6 @@ class MainActivity : AppCompatActivity() {
 
                 val alturaQ2 = altura * altura
                 val resultado = peso / alturaQ2
-
-                //Navegar proxima tela
-                //Criar layout da proxima tela
-                //Passar dados para proxima tela
 
                 val intent = Intent(this, ResultActivity::class.java)
                 intent.putExtra(Key_Resultado_IMC, resultado)
