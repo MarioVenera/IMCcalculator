@@ -23,11 +23,12 @@ class MainActivity : AppCompatActivity() {
 
             if (pesoStr == "" || alturaStr == ""){
 
-                Snackbar.make(
-                    edtPeso,
-                    "Preencha todos os campos",
-                    Snackbar.LENGTH_LONG
-                ).show()
+                Snackbar
+                    .make(
+                        edtPeso,
+                        "Preencha todos os campos",
+                        Snackbar.LENGTH_LONG
+                    ).show()
 
             }else {
                 val peso = pesoStr.toFloat()
